@@ -1,0 +1,443 @@
+@import "src/page2.css";
+@import "src/page3.css";
+@import "src/page4.css";
+@import "src/queries.css";
+@import url(src/page2.css);
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  height: 100vh;
+  font-family: 'Open Sans', sans-serif;
+}
+
+header {
+  overflow: hidden;
+  background-color: #ffffff;
+  padding: 20px 76px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  font-size: 0.75rem;
+  font-weight: 700;
+  position: fixed;
+  top: 0;
+  box-shadow: 0 0 6px #00000070;
+  width: 100vw;
+  z-index: 20;
+  gap: 20px;
+}
+
+header .logo {
+  padding: 0;
+}
+
+header .logo-svg {
+  height: 2rem;
+}
+
+header a {
+  color: black;
+  text-align: center;
+  padding: 12px 0 12px 12px;
+  text-decoration: none;
+  background-color: #fff;
+}
+
+header a:hover {
+  color: #ff556e;
+}
+
+.navbar {
+  display: flex;
+  justify-content: end;
+  align-items: baseline;
+}
+
+.dropdown {
+  position: relative;
+  /*display: block;*/
+}
+
+.dropdown span {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: baseline;
+}
+
+.dropdown span:hover {
+  color: #ff556e;
+}
+
+.navbar .fa-caret-down {
+  width: 8px;
+}
+
+.dropdown-content {
+  min-width: 400px;
+  position: absolute;
+  top: 70%;
+  right: -275%;
+  display: none;
+  z-index: 10;
+  padding-bottom: 10px;
+  box-shadow: 0 0 6px #00000070;
+  background-color: #fff;
+}
+
+.dropdown:hover .dropdown-content {
+  display: flex;
+  color: #ff556e;
+}
+
+.download-btn-navbar {
+  border: 2px solid #ff556e;
+  border-radius: 20px;
+  padding: 6px 21px;
+  background-color: #fff;
+  color: #ff556e;
+  font-size: 0.8rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.download-btn-navbar:hover {
+  color: #ff556e;
+  box-shadow: 0 0px 15px #ff556e;
+}
+
+main {
+  margin: 0 auto;
+}
+
+.banner {
+  text-align: center;
+  width: 80vw;
+  margin: 150px auto 0;
+}
+
+.green-diamond {
+  position: absolute;
+  top: 14vh;
+  height: 20px;
+  left: 7.5vw;
+}
+
+.blue-circle {
+  position: absolute;
+  top: 56vh;
+  left: 6vw;
+  height: 80px;
+  z-index: -10;
+}
+
+.yellow-circle {
+  position: absolute;
+  top: 15vh;
+  left: 87vw;
+  height: 30px;
+}
+
+h1 {
+  font-size: 3.7rem;
+}
+
+p {
+  font-size: 1rem;
+  color: #868687;
+  font-weight: 600;
+}
+
+.header-iphone {
+  margin: 100px auto 60px;
+  text-align: center;
+}
+
+.header-iphone-img {
+  max-width: 100%;
+  height: auto;
+  transition: transform .2s;
+}
+
+.header-iphone-img:hover {
+  transform: scale(1.1);
+}
+
+.banner .download-btn {
+  margin: 30px 5px 0 0;
+  background-color: #ff556e;
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: 900;
+  padding: 12px 40px;
+  border-radius: 40px;
+  transition: all 0.2s ease-in-out;
+}
+
+.download-btn:hover {
+  color: #fff;
+  box-shadow: 0 0px 15px #ff556e;
+}
+
+.download-btn i {
+  font-size: 20px;
+  margin-right: 5px;
+}
+
+.atributes-container {
+  width: 80vw;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 80px;
+}
+
+.atributes-container .circle {
+  width: 11vmin;
+  height: 11vmin;
+  border-radius: 50%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+}
+
+.atributes-container .purple {
+  background-color: #e8e3f9;
+}
+
+.atributes-container .purple i {
+  color: #aa7eec;
+  font-size: 5vmin;
+
+}
+
+.purple:hover {
+  position: relative;
+  cursor: pointer;
+  animation-name: temblor;
+  animation-duration: .4s;
+  animation-delay: 0s;
+}
+
+@keyframes temblor {
+  0% {
+    left: 3px;
+    top: 8px;
+  }
+
+  25% {
+    left: -3px;
+    top: 5px;
+  }
+
+  50% {
+    left: 3px;
+    top: 8px;
+  }
+
+  75% {
+    left: -3px;
+    top: 5px;
+  }
+
+  100% {
+    left: 0px;
+    top: 0px;
+  }
+}
+
+
+.atributes-container .green {
+  background-color: #d5f2ed;
+}
+
+.atributes-container .green i {
+  color: #19ca94;
+  font-size: 5vmin;
+}
+
+.green:hover {
+  position: relative;
+  cursor: pointer;
+  animation-name: temblor;
+  animation-duration: .4s;
+  animation-delay: 0s;
+}
+
+@keyframes temblor {
+  0% {
+    left: 3px;
+    top: 8px;
+  }
+
+  25% {
+    left: -3px;
+    top: 5px;
+  }
+
+  50% {
+    left: 3px;
+    top: 8px;
+  }
+
+  75% {
+    left: -3px;
+    top: 5px;
+  }
+
+  100% {
+    left: 0px;
+    top: 0px;
+  }
+}
+
+.atributes-container .pink {
+  background-color: #f7e1e7;
+}
+
+.atributes-container .pink i {
+  color: #ff556e;
+  font-size: 5vmin;
+}
+
+.pink:hover {
+  position: relative;
+  cursor: pointer;
+  animation-name: temblor;
+  animation-duration: .4s;
+  animation-delay: 0s;
+}
+
+@keyframes temblor {
+  0% {
+    left: 3px;
+    top: 8px;
+  }
+
+  25% {
+    left: -3px;
+    top: 5px;
+  }
+
+  50% {
+    left: 3px;
+    top: 8px;
+  }
+
+  75% {
+    left: -3px;
+    top: 5px;
+  }
+
+  100% {
+    left: 0px;
+    top: 0px;
+  }
+}
+
+.atributes-container .yellow {
+  background-color: #f7efd9;
+}
+
+.atributes-container .yellow i {
+  color: #ffb30f;
+  font-size: 5vmin;
+}
+
+.yellow:hover {
+  position: relative;
+  cursor: pointer;
+  animation-name: temblor;
+  animation-duration: .4s;
+  animation-delay: 0s;
+}
+
+@keyframes temblor {
+  0% {
+    left: 3px;
+    top: 8px;
+  }
+
+  25% {
+    left: -3px;
+    top: 5px;
+  }
+
+  50% {
+    left: 3px;
+    top: 8px;
+  }
+
+  75% {
+    left: -3px;
+    top: 5px;
+  }
+
+  100% {
+    left: 0px;
+    top: 0px;
+  }
+}
+
+.atributes-container .blue {
+  background-color: #ddf0f9;
+}
+
+.atributes-container .blue i {
+  color: #4fb9e8;
+  font-size: 5vmin;
+}
+
+.blue:hover {
+  position: relative;
+  cursor: pointer;
+  animation-name: temblor;
+  animation-duration: .4s;
+  animation-delay: 0s;
+}
+
+@keyframes temblor {
+  0% {
+    left: 3px;
+    top: 8px;
+  }
+
+  25% {
+    left: -3px;
+    top: 5px;
+  }
+
+  50% {
+    left: 3px;
+    top: 8px;
+  }
+
+  75% {
+    left: -3px;
+    top: 5px;
+  }
+
+  100% {
+    left: 0px;
+    top: 0px;
+  }
+}
+
+.atributes-container p {
+  color: #000;
+  font-size: 1rem;
+  font-weight: 700;
+  text-align: center;
+}
