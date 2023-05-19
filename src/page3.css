@@ -1,0 +1,140 @@
+.screens {
+  text-align: center;
+  padding: 100px 0;
+  background-color: #f7fafd;
+}
+
+.screens h2 {
+  font-size: 2.23rem;
+}
+
+.testimonials-top,
+.testimonials-bottom {
+  display: flex;
+  justify-content: center;
+  width: 85vw;
+  margin: 0 auto;
+  gap: 20px;
+}
+
+.fa-star {
+  font-size: 1.35rem;
+  color: #e2970f;
+}
+
+.testimonial {
+  font-size: 0.85rem;
+  font-style: italic;
+  line-height: 1.5rem;
+}
+
+.testimonial-name {
+  font-size: 0.85rem;
+  font-weight: 700;
+  font-style: normal;
+  color: #000;
+}
+
+.rick,
+.lynda,
+.jay,
+.frank,
+.rita,
+.jones {
+  width: 33.33%;
+}
+
+.customer-logos {
+  margin: 80px 6.45vw;
+  padding: 45px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.75rem;
+  line-height: 3rem;
+}
+
+.container-testimonials-bottom {
+  margin-bottom: 80px;
+}
+
+.container-feedback {
+  width: 100vw;
+  background-color: #e8eff6;
+}
+
+.feedback {
+  width: 80vw;
+  padding: 130px 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 80px;
+  margin: 0 auto;
+}
+
+.p-feedback {
+  margin: 0;
+  font-size: 0.7rem;
+}
+
+.feedback .number {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #000;
+  margin: 0;
+}
+
+.fa-users {
+  color: #aa7eec;
+  font-size: 6.25vmin;
+}
+
+.fa-code {
+  color: #19ca94;
+  font-size: 6.25vmin;
+}
+
+.fa-gear {
+  color: #ff556e;
+  font-size: 6.25vmin;
+}
+
+.fa-comments {
+  color: #ffb30f;
+  font-size: 6.25vmin;
+}
+
+.fa-rocket {
+  color: #4fb9e8;
+  font-size: 6.25vmin;
+}
+
+.screens-last {
+  text-align: center;
+  width: 80vw;
+  margin: 0 auto;
+}
+
+.screens-green-diamond {
+  position: absolute;
+  bottom: -460%;
+  height: 20px;
+  left: 65vw;
+}
+
+.screens-blue-circle {
+  position: absolute;
+  top: 570vh;
+  left: 68vw;
+  height: 80px;
+}
+
+.screens-yellow-circle {
+  position: absolute;
+  top: 600vh;
+  left: 28vw;
+  height: 30px;
+}
