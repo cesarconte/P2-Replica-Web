@@ -1,3 +1,9 @@
+.container-screens-last {
+  text-align: center;
+  width: 80vw;
+  margin: 0 auto;
+}
+
 .download-iphone {
   margin: 0 auto 60px;
 }
@@ -6,42 +12,41 @@
   max-width: 100%;
   height: auto;
   margin-top: 140px;
+  transition: transform .2s;
 }
 
-.screens-bottom {
+.download-iphone-img:hover {
+  transform: scale(1.1);
+}
+
+.container-screens-bottom {
   width: 80vw;
   margin: 0 auto;
 }
 
-.screens-bottom .download-btn {
-  margin: 30px 5px 0 0;
-  background-color: #ff556e;
-  color: #fff;
-  font-size: 0.8rem;
-  font-weight: 900;
-  padding: 12px 40px;
-  border-radius: 40px;
-  transition: all 0.2s ease-in-out;
-}
-
-.download-btn:hover {
-  color: #fff;
-  box-shadow: 0 0px 15px #ff556e;
+.container-screens-bottom p {
+  font-size: 0.9375rem;
+  font-size: clamp(0.9375rem, 0.9rem + 0.1875vw, 1.125rem);
+  color: #868687;
+  font-weight: 500;
+  padding: 2rem 0;
+  margin: 0 auto;
+  line-height: 1.6rem;
+  width: 90%;
 }
 
 footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: space-between;
   flex-wrap: wrap;
   width: 100vw;
   min-height: 100%;
   background-color: #f7fafd;
   border-top: 1px solid #c8d4d6;
-  padding: 65px 65px 25px;
-  gap: 40px;
-  color: #868687
+  padding: 5vh 5vw 2vh;
+  gap: 2vh;
+  color: #868687;
 }
 
 .container-footer-links {
@@ -72,15 +77,9 @@ footer li {
   padding-right: 6px;
 }
 
-.container-footer-links i {
-  display: inline-block;
-  justify-content: start;
-  margin-right: 10px;
-}
-
 .social-links {
   display: flex;
-  gap: 10px;
+  gap: 2vw;
 }
 
 .social-links a {
@@ -88,7 +87,6 @@ footer li {
   height: 35px;
   width: 35px;
   background-color: #868687;
-  margin: 0 10px 10px 0;
   text-align: center;
   line-height: 35px;
   border-radius: 50%;
@@ -108,4 +106,22 @@ footer li {
 .copyright p {
   text-align: center;
   margin: 0;
+}
+
+@media (max-width: 810px) {
+  .download-iphone-img {
+    margin-top: 0;
+  }
+
+  .container-footer-links {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .social-links {
+    justify-content: flex-end;
+  }
 }

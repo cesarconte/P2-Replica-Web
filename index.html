@@ -5,135 +5,195 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <script src="https://kit.fontawesome.com/ea59863933.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="style.css">
   <script src="main.js"></script>
-  <title>P2 Réplica Web</title>
+  <title>P2 Web Reply</title>
 </head>
 
 <body>
-  <header>
-    <a href="#" class="logo"><img src="/media/images/logo.svg" alt="logo" class="logo-svg"></a>
-    <div class="navbar" id="topNavbar">
-      <a href="#">DESCRIPTION</a>
-      <a href="#">FEATURES</a>
-      <a href="#">SCREENS</a>
-      <div class="dropdown">
-        <span><a href="#extra">EXTRA</a><i class="fa fa-caret-down"></i></span>
-        <div class="dropdown-content">
-          <a href="#article-details">ARTICLE DETAILS</a>
-          <a href="#terms-conditions">TERMS CONDITIONS
-          </a>
-          <a href="" class="#privacy-policy">PRIVACY POLICY</a>
-        </div>
+
+  <nav class="navbar">
+    <!-- Logo -->
+    <div class="company-logo"><a href="#" class="logo"><img src="/media/images/logo.svg" alt="logo"
+          class="logo-svg"></a></div>
+
+    <!-- Navigation Menu -->
+    <ul class="nav-links">
+
+      <!-- Using Checkbox Hack -->
+      <input type="checkbox" id="checkbox_toggle" />
+      <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+
+      <!-- Navigation Menus -->
+      <div class="menu">
+
+        <li><a href="#description">DESCRIPTION</a></li>
+        <li><a href="/">FEATURES</a></li>
+        <li><a href="#screens">SCREENS</a></li>
+        <li class="services">
+          <span><a href="#extra">EXTRA</a><i class="fa fa-caret-down"></i></span>
+          <!-- Dropdown Menu -->
+          <ul class="dropdown">
+
+            <li><a href="/">ARTICLE DETAILS</a></li>
+            <li><a href="/">TERMS CONDITIONS</a></li>
+            <li><a href="/">PRIVACY POLICY</a></li>
+
+          </ul>
+
+        </li>
+        <li><a href="https://factoriaf5.org/"><button class="btn download-navbar">DOWNLOAD</button></a></li>
+
       </div>
-      <a href="https://factoriaf5.org/"><button class="download-btn-navbar">DOWNLOAD</button></a>
-    </div>
-  </header>
+
+    </ul>
+
+  </nav>
+
   <main>
-    <section class="banner">
+
+    <section class="header">
+
       <h1>Mobile App Landing Page</h1>
       <p>Start focusing on your goals and get more things done with Sync mobile applications. It's the first app
         to
         harness the power of social connections to help you stay focused and get organized
       </p>
-      <button class="download-btn apple"><i class='fa fa-apple'></i>DOWNLOAD</button>
-      <button class="download-btn gplay"><i class='fa fa-play'></i>DOWNLOAD</button>
+      <button class="btn donwload-apple"><i class="fa-brands fa-apple"></i></i>DOWNLOAD</button>
+      <button class="btn download-gplay"><i class="fa-brands fa-google-play"></i></i>DOWNLOAD</button>
+
       <div class="header-iphone">
         <img class="header-iphone-img" src="media/images/header-iphone.png" alt="" width="921" height="578">
       </div>
-      <section class="atributes-container">
+
+      <section class="features-container">
+
         <div class="identify-goals">
-          <div class="circle purple"><i class='fa fa-users'></i></a></div>
+
+          <div class="circle purple"><i class='fas fa-users'></i></a></div>
           <p>Identify Goals</p>
+
         </div>
+
         <div class="situation-analysis">
-          <div class="circle green"><i class='fa fa-code'></i></div>
+
+          <div class="circle green"><i class='fas fa-code'></i></div>
           <p>Situation Analysis</p>
+
         </div>
+
         <div class="tasks-settings">
-          <div class="circle pink"><i class='fa fa-gear'></i></div>
+
+          <div class="circle pink"><i class='fas fa-gear'></i></div>
           <p>Tasks Settings</p>
+
         </div>
+
         <div class="social-interaction">
-          <div class="circle yellow"><i class='fa fa-comments'></i></div>
+
+          <div class="circle yellow"><i class='fas fa-comments'></i></div>
           <p>Social Interaction</p>
+
         </div>
+
         <div class="get-things-done">
-          <div class="circle blue"><i class='fa fa-rocket'></i></div>
+
+          <div class="circle blue"><i class='fas fa-rocket'></i></div>
           <p>Get Things Done</p>
+
         </div>
+
       </section>
-      <img src="media/images/decorative-green-diamond.svg" alt="decorative green diamon" class="green-diamond">
+
+      <img src="media/images/decorative-green-diamond.svg" alt="decorative green diamond" class="green-diamond">
       <img src="media/images/decorative-blue-circle.svg" alt="decorative blue circle" class="blue-circle">
       <img src="media/images/decorative-yellow-circle.svg" alt="decorative yellow circle" class="yellow-circle">
 
     </section>
-    <section class="description">
 
-      <div class="container-top">
-        <div class="container-top-left">
-          <img src="media/images/description-1-app.png" alt="description 1 app" class="img-description-1">
-        </div>
-        <div class="container-top-right">
+    <section class="description-container" id="description">
+
+      <section class="description-container-top">
+
+        <aside class="container-top-left">
+          <img src="media/images/description-1-app.png" alt="diferent views of the app" class="img-description-1">
+        </aside>
+
+        <article class="container-top-right">
           <h2>Organize Your Time And Start Getting Results</h2>
           <p>Sync is the first mobile app on the market to harness the power of social connections to help you
             stop
             procrastinating and start getting things done. Give it a try and see the changes right away</p>
-          <span><i class="fa fa-square"></i> Analyse and evaluate your current status and productivity
+          <span><i class="fas fa-square"></i> Analyse and evaluate your current status and productivity
           </span><br>
-          <span><i class="fa fa-square"></i>
+          <span><i class="fas fa-square"></i>
             Begin monitoring your day to day routine with Sync app</span><br>
-          <span><i class="fa fa-square"></i>
-            See the improved results in no more than a couple of weeks</span><br>
-          <button class="lightbox-btn"></i>LIGHTBOX</button>
-        </div>
-      </div>
-      <div class="container-bottom">
-        <div class="container-bottom-left">
-          <div>
-            <div class="tasks-btns">
-              <button class="btn btn-schedule"><i class="fa fa-clock-o"></i> Schedule</button>
-              <button class="btn btn-tracking"><i class="fa fa-list"></i>Tracking</button><br>
-              <button class="btn btn-organize"><i class="fa fa-calendar"></i>Organize</button>
-            </div>
-            <p><strong>Schedule tasks</strong> to keep track of their completion. Sync provides multiple
-              scheduling
-              options including
-              alarms and reminders.</p>
-            <span><i class='fa fa-check-square-o'></i> You can always add new tasks or change the settings of
-              existing
-              ones
-              in
-              your calendar view or the app control panel
-            </span><br><br>
-            <span><i class="fa fa-check-square-o"></i>
-              It's easy to stay focused on your most important daily activities that will get you closer to
-              meeting
-              your
-              goals</span><br><br>
-            <span><i class="fa fa-check-square-o"></i>
-              Use phone reminders to free up your long term memory which will reduce stress and make you more
-              productive</span><br>
-            <button class="terms-btn" type="button"></i>TERMS</button>
-            <button class="privacy-btn"></i>PRIVACY</button>
+          <span><i class="fas fa-square"></i>
+            See the improved results in no more than a couple of weeks</span>
+          <button class="btn lightbox-btn" type="button"></i>LIGHTBOX</button>
+        </article>
+
+      </section>
+
+      <section class="description-container-bottom">
+
+        <article class="container-bottom-left">
+
+          <div class="tasks-btns">
+            <button class="btn btn-schedule" type="button"><i class="fa-regular fa-clock"></i> Schedule</button>
+            <button class="btn btn-tracking" type="button"><i class="fas fa-list"></i>Tracking</button>
+            <button class="btn btn-organize" type="button"><i class="fas fa-calendar"></i>Organize</button>
           </div>
-        </div>
-        <div class="container-bottom-right">
-          <img src="media/images/description-2-app.png" alt="description 1 app" class="img-description-2">
-        </div>
-      </div>
+
+          <p><strong>Schedule tasks</strong> to keep track of their completion. Sync provides multiple
+            scheduling
+            options including
+            alarms and reminders.</p>
+          <span><i class="fa-regular fa-square-check"></i> You can always add new tasks or change the settings of
+            existing
+            ones
+            in
+            your calendar view or the app control panel
+          </span><br><br>
+          <span><i class="fa-regular fa-square-check"></i>
+            It's easy to stay focused on your most important daily activities that will get you closer to
+            meeting
+            your
+            goals</span><br><br>
+          <span><i class="fa-regular fa-square-check"></i>
+            Use phone reminders to free up your long term memory which will reduce stress and make you more
+            productive</span><br>
+          <button class="btn terms-btn"></i>TERMS</button>
+          <button class="btn privacy-btn"></i>PRIVACY</button>
+
+        </article>
+
+        <aside class="container-bottom-right">
+          <img src="media/images/description-2-app.png" alt="calendar section of the app" class="img-description-2">
+        </aside>
+
+      </section>
+
     </section>
-    <section class="screens">
+
+    <section class="container-screens" id="screens">
+
       <section class="container-testimonials-top">
         <h2>User Testimonials</h2>
+
         <div class="testimonials-top">
+
           <div class="testimonial rick">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fasfa-star"></i>
             <p class="testimonial">I love using Sync for my personal development needs. It meets all my
               requirements
               and
@@ -141,12 +201,13 @@
               lop with focusing skills</p>
             <p class="testimonial-name">Rick Jones - Designer</p>
           </div>
+
           <div class="testimonial lynda">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
             <p class="testimonial">After trying our a large number of personal coaching apps I decided to give
               Sync a
               try
@@ -154,12 +215,13 @@
               surprise it was</p>
             <p class="testimonial-name">Lynda Marquez - Developer</p>
           </div>
+
           <div class="testimonial jay">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
             <p class="testimonial">Never dreamed I could learn so fast how to focus on my personal goals and
               improve
               my
@@ -167,8 +229,11 @@
               thought possible</p>
             <p class="testimonial-name">Jay Frisco - Marketer</p>
           </div>
+
         </div>
+
       </section>
+
       <section class="customer-logos">
         <img src="media/images/customer-logo-1.png" alt="Customer Primester logo">
         <img src="media/images/customer-logo-2.png" alt="Customer GreenApp logo">
@@ -176,14 +241,17 @@
         <img src="media/images/customer-logo-4.png" alt="Customer Keyrunner logo">
         <img src="media/images/customer-logo-5.png" alt="Customer Amplifier logo">
       </section>
+
       <section class="container-testimonials-bottom">
+
         <div class="testimonials-bottom">
+
           <div class="testimonial frank">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
             <p class="testimonial">I got so much value from using Sync in my daily life for which I am very
               grateful
               and
@@ -192,120 +260,153 @@
               everybody</p>
             <p class="testimonial-name">Frank Gibson - Manager</p>
           </div>
+
           <div class="testimonial rita">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
             <p class="testimonial">If you have great goals but can't figure out a way to keep focused then you
               should
               definitely gibe Sync a
               try and see the results</p>
             <p class="testimonial-name">Rita Longmile - Designer</p>
           </div>
+
           <div class="testimonial jones">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
             <p class="testimonial">I've been looking for a great organizer app for such a long time but now I am
               really
               happy that I found
               Sync. It's been working great</p>
             <p class="testimonial-name">Jones Smith - Developer</p>
           </div>
+
         </div>
+
       </section>
+
       <section class="container-feedback">
+
         <div class="feedback">
+
           <div class="happy-users">
-            <i class='fa fa-users'></i>
+            <i class='fas fa-users'></i>
             <p class="number">231</p>
             <p class="p-feedback">Happy Users</p>
           </div>
+
           <div class="issues-solved">
-            <i class='fa fa-code'></i>
+            <i class='fas fa-code'></i>
             <p class="number">385</p>
             <p class="p-feedback">Issues Solved</p>
           </div>
+
           <div class="good-reviews">
-            <i class='fa fa-gear'></i>
+            <i class='fas fa-gear'></i>
             <p class="number">159</p>
             <p class="p-feedback">Good Reviews</p>
           </div>
+
           <div class="case-studies">
-            <i class='fa fa-comments'></i>
+            <i class='fas fa-comments'></i>
             <p class="number">127</p>
             <p class="p-feedback">Case Studies</p>
           </div>
+
           <div class="orders-received">
-            <i class='fa fa-rocket'></i>
+            <i class='fas fa-rocket'></i>
             <p class="number">211</p>
             <p class="p-feedback">Orders Received</p>
           </div>
+
         </div>
+
       </section>
-      <section class="screens-last">
-        <img src="media/images/decorative-green-diamond.svg" alt="decorative green diamon"
-          class="screens-green-diamond">
-        <img src="media/images/decorative-blue-circle.svg" alt="decorative blue circle" class="screens-blue-circle">
-        <img src="media/images/decorative-yellow-circle.svg" alt="decorative yellow circle"
-          class="screens-yellow-circle">
-        <div class="download-iphone">
-          <img class="download-iphone-img" src="media/images/download-iphone.png" alt="" width="921" height="578">
+
+      <section class="container-screens-last">
+
+        <div class="download-iphone"></div>
+        <img class="download-iphone-img" src="media/images/download-iphone.png" alt="" width="921" height="578">
         </div>
-        <div class="screens-bottom">
+
+        <section class="container-screens-bottom">
+
           <p>Do you feel like you're wasting time with small stuff instead of working towards your goals? Start
             using
             Sync
             to organize your time and get a grip on your personal development</p>
-          <button class="download-btn"><i class='fa fa-apple'></i>DOWNLOAD</button>
-          <button class="download-btn"><i class='fa fa-play'></i>DOWNLOAD</button>
-        </div>
+          <button class="btn download-btn" type="button"><i class="fa-brands fa-apple"></i>DOWNLOAD</button>
+          <button class="btn download-btn" type="button"><i class="fa-brands fa-google-play"></i>DOWNLOAD</button>
+
+        </section>
+
       </section>
+
     </section>
+
     <footer>
+
       <section class="container-footer-links">
-        <div class="contact-info">
+
+        <section class="contact-info">
+
           <h4>Contact info</h4>
           <ul class="contact-info-list">
-            <li><i class="fa fa-map-marker"></i>
+            <li><i class="fas fa-map-marker"></i>
               22 Innovation Street, CA, US
             </li>
-            <li><i class="fa fa-envelope"></i> <a href="mailto:office@syncmobile.com">office@syncmobile.com</a></li>
-            <li><i class="fa fa-phone"></i> <a href="tel:+44 376 945 23">+44 376 945 23</a>
+            <li><i class="fas fa-envelope"></i> <a href="mailto:office@syncmobile.com">office@syncmobile.com</a></li>
+            <li><i class="fas fa-phone"></i> <a href="tel:+44 376 945 23">+44 376 945 23</a>
             </li>
           </ul>
-        </div>
-        <div class="value-links">
+
+        </section>
+
+        <section class="value-links">
+
           <h4>Value Links</h4>
           <ul>
             <li><a href="#">Terms & Conditions</a></li>
             <li><a href="#">Privacy Policy</a></li>
             <li><a href="#">Article Details</a></li>
           </ul>
-        </div>
-        <div class="other-apps">
+
+        </section>
+
+        <section class="other-apps">
+
           <h4>Other Apps</h4>
           <ul>
             <li><a href="#">Scientific Calculator</a></li>
             <li><a href="#">Advanced Timer</a></li>
             <li><a href="#">Music Store</a></li>
           </ul>
-        </div>
-        <div class="social-links">
-          <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
-          <a href="https://twitter.com/"><i class="fa fa-twitter"></i></a>
-          <a href="https://www.pinterest.com/"><i class="fa fa-pinterest-p"></i></a>
-          <a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>
-        </div>
+
+        </section>
+
+        <section class="social-links">
+
+          <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+          <a href="https://www.pinterest.com/"><i class="fa-brands fa-pinterest-p"></i></a>
+          <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+
+        </section>
+
       </section>
+
       <div class="copyright">
-        <p>Copyright <i class="fa fa-copyright"></i> 2020 Inovatik - All rights reserved</p>
+        <p>Copyright <i class="fa fa-copyright"></i>2020 Inovatik - All rights reserved</p>
       </div>
+
     </footer>
+
   </main>
 
 </body>
